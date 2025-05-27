@@ -128,8 +128,11 @@
       <li><a href="#horarios">Horários</a></li>
       <li><a href="#contato">Contato</a></li>
       <li><a href="#localizacao">Localização</a></li>
+      <li><a href="#" onclick="abrirVideo()">Conhecendo o Espaço</a></li>
+      <li><a href="page01.html">Saiba Mais</a></li>
     </ul>
   </nav>
+
 
   <main id="home" class="section">
     <h1>Espaço Escolar<br><span style="font-size:1.2rem;">Tempo de Aprender</span></h1>
@@ -173,6 +176,12 @@
         <li><strong>COLÉGIO CPI Ilhotas</strong><br>R. Heitor Castelo Branco, 3090 – Ilhotas, Teresina – PI, CEP 64001-560</li>
       </ul>
       <p class="credits">Mapa criado em Google My Maps – ©2025 Google</p>
+      <p style="margin-top: 1rem;">
+  <a href="https://maps.app.goo.gl/p5mdAz2Hug9L2Se69" target="_blank" style="color: var(--accent); font-weight: bold;">
+    ➤ Abrir no Google Maps, Waze ou Uber
+  </a>
+</p>
+
     </aside>
   </section>
 
@@ -210,9 +219,14 @@
         video.currentTime = 0;
       }
     });
+    function abrirVideo() {
+  modal.style.display = 'flex';
+}
+
 
     document.getElementById('moreBtn')
       .addEventListener('click', () => window.location.href = 'page01.html');
   </script>
 </body>
 </html>
+
