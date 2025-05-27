@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Saiba Mais – Espaço Escolar Tempo de Aprender</title>
+
+  <!-- reaproveite seu favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <style>
+    :root {
+      --bg-start:      #E3F2FD;
+      --bg-end:        #F8F9F9;
+      --white:         #FFFFFF;
+      --text:          #2C3E50;
+      --accent:        #2980B9;
+      --shadow:        rgba(0, 0, 0, 0.05);
+      --btn-bg:        #FCEED8;
+      --header-height: 7.94cm;
+    }
+    *, *::before, *::after {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      height: var(--header-height);
+      background-image: url('header-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+    nav {
+      background-color: var(--btn-bg);
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: .5rem 0;
+    }
+    nav li + li { margin-left: 1.5rem; }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      padding: .5rem 1rem;
+      transition: background .3s;
+      border-radius: 4px;
+    }
+    nav a:hover { background: var(--bg-end); }
+    .section {
+      background: var(--white);
+      margin: 2rem auto;
+      padding: 1.5rem;
+      max-width: 900px;
+      box-shadow: 0 4px 12px var(--shadow);
+      border-radius: 8px;
+    }
+    .section h1 { color: var(--accent); margin-bottom: 1rem; }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .75rem 1.5rem;
+      background: var(--btn-bg);
+      color: var(--text);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .3s;
+    }
+    .btn:hover { background: var(--bg-end); }
+    footer {
+      text-align: center;
+      font-size: .9rem;
+      color: #777;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header></header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#conteudo">Conteúdo</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo" class="section">
+  <h1>Saiba Mais</h1>
+
+  <h2>Nossa Estrutura</h2>
+  <p>
+    O Espaço Escolar Tempo de Aprender dispõe de seis salas de aula, criteriosamente distribuídas de acordo com as séries do Ensino Fundamental:
+    <ul>
+      <li><strong>Sala 1:</strong> 1º e 2º anos</li>
+      <li><strong>Sala 2:</strong> 3º ano</li>
+      <li><strong>Sala 3:</strong> 4º e 5º anos</li>
+      <li><strong>Sala 4:</strong> 6º ano</li>
+      <li><strong>Sala 5:</strong> 7º e 8º anos</li>
+      <li><strong>Sala 6:</strong> 9º ano e 1º ano do E.M</li>
+    </ul>
+    Contamos ainda com uma cantina própria; alternativamente, os alunos podem trazer suas refeições, as quais são facilmente aquecidas em nosso micro-ondas. Nossas instalações incluem sanitários com duchas, oferecendo comodidade e higiene, e todas as salas são climatizadas, assegurando conforto térmico durante as atividades pedagógicas.
+  </p>
+
+  <button class="btn" id="backBtn">Voltar ao Início</button>
+</main>
